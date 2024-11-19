@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Calculator</title>
+</head>
+<body>
+   <div class="top">
+        <div class="main">
+            <!-- <div class="display"> -->
+                <input id="result" type="text" placeholder="0" class="display" readonly>
+                
+            <!-- </div> -->
+            <div class="nums">
+                <div onclick="calcClear()" class="number"><p class="no">AC</p></div>
+                <div onclick="removeLastDigit()" class="number"><p class="no"><i class="fa-solid fa-delete-left"></i></p></div>
+                <div onclick="displayContent('%')" class="number"><p class="no">%</p></div>
+                <div onclick="displayContent('/')" class="number"><p class="no">/</p></div>
+
+                <div onclick="displayContent('7')" class="number"><p class="no">7</p></div>
+                <div  onclick="displayContent(`8`)"class="number"><p class="no">8</p></div>
+                <div onclick="displayContent('9')" class="number"><p class="no">9</p></div>
+                <div onclick="displayContent('*')" class="number"><p class="no"><i class='fas fa-times'></i></p></div>
+
+                <div onclick="displayContent('4')" class="number"><p class="no">4</p></div>
+                <div onclick="displayContent('5')" class="number"><p class="no">5</p></div>
+                <div onclick="displayContent('6')" class="number"><p class="no">6</p></div>
+                <div onclick="displayContent('-')" class="number"><p class="no">-</p></div>
+
+                <div onclick="displayContent('1')" class="number"><p class="no">1</p></div>
+                <div onclick="displayContent('2')" class="number"><p class="no">2</p></div>
+                <div onclick="displayContent('3')" class="number"><p class="no">3</p></div>
+                <div onclick="displayContent('+')" class="number"><p class="no" >+</p></div>
+
+                <div onclick="displayContent('0')" class="number "><p class="no">0</p></div>
+                <div onclick="displayContent('.')" class="number"><p class="no">.</p></div>
+                <div onclick="calcOutput()" class="number zero"><p class="no">=</p></div>
+            </div>
+   </div>
+        </div>
+        
+</body>
+<script src="./main.js"></script>
+</html>
